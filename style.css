@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(19, 40, 49);
+}
+body::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #25497e, #303472, #503171, #80317f, #7f0259);
+    clip-path: circle(22% at 30% 20%);
+}
+body::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right top, #53d8bb, #00aec2, #0080c7, #004db5, #17027f);
+    clip-path: circle(22% at 70% 90%);
+}
+.container{
+    position: relative;
+
+    border-radius: 7px;
+    background: rgb(255, 255, 255, 0.07);
+    overflow: hidden;
+    z-index: 100;
+    backdrop-filter: blur(16px);
+    border-top: 1px solid rgb(255, 255, 255, 0.03);
+    border-left: 1px solid rgb(255, 255, 255, 0.03);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+.container .calculator{
+    position: relative;
+    display: grid;
+
+}
+.container .calculator .value{
+    grid-column: span 4;
+    height: 142px;
+width: 300px;
+    
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 12px;
+    font-size: 31px;
+    background: transparent;
+    color: #fff;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.05);
+    border-right: 1px solid rgb(255, 255, 255, 0.05);
+} 
+.container .calculator span{
+    display: grid;
+    place-items: center;
+    width: 75px;
+    height: 75px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 23px;
+    user-select: none;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.06);
+    border-right: 1px solid rgb(255, 255, 255, 0.06);
+transition: all 0.2s ease;
+}
+.container .calculator span:hover{
+    transition: all 0.1s ease;
+    background:rgb(255, 255, 255, 0.06);
+}
+.container .calculator span:active{
+    background: #46eb78;
+    color:rgb(44, 0, 76);
+    font-weight: 700;
+    font-size: 25px;
+}
+.container .calculator .clear{
+grid-column: span 2;
+width: 155px;
+background:rgb(255, 255, 255, 0.05);
+}
+.container .calculator .plus{
+    grid-row: span 2;
+height: 155px;
+}
+.equal{
+    background:rgb(255, 255, 255, 0.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
